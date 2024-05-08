@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto de Gestión de Tareas con Next.js y PostgreSQL
 
-## Getting Started
+Este proyecto es una aplicación web desarrollada con Next.js que proporciona funcionalidades CRUD (Crear, Leer, Actualizar, Borrar) para gestionar tareas. Utiliza PostgreSQL como base de datos y está desplegado en Vercel. La aplicación proporciona las siguientes rutas:
 
-First, run the development server:
+- [http://localhost:3000/](http://localhost:3000/): Lista todas las tareas disponibles.
+- [http://localhost:3000/new](http://localhost:3000/new): Permite crear una nueva tarea.
+- [http://localhost:3000/task/edit/3](http://localhost:3000/task/edit/3): Permite editar o eliminar una tarea específica (en este caso, tarea con ID 3).
+
+## Descripción del Proyecto
+
+Este proyecto utiliza Next.js, un marco de trabajo de React para construir aplicaciones web rápidas y escalables. La base de datos PostgreSQL se emplea para almacenar y gestionar los datos de las tareas. Vercel se utiliza para el despliegue de la aplicación, permitiendo un fácil acceso y escalabilidad.
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local utilizando Git:
+
+    ```bash
+    git clone <URL-del-repositorio>
+    ```
+
+2. Ve al directorio del proyecto:
+
+    ```bash
+    cd <nombre-del-directorio>
+    ```
+
+3. Instala las dependencias necesarias utilizando npm o yarn:
+
+    ```bash
+    npm install
+    # o
+    yarn install
+    ```
+
+## Configuración de la Base de Datos
+
+- Asegúrate de tener PostgreSQL instalado y funcionando en tu sistema.
+- Crea una base de datos llamada `task_manager`.
+- Configura las credenciales de acceso a la base de datos en el archivo `.env`.
+
+## anexos
+![image](https://github.com/CrissFaDev/Nextjs-Task-/assets/80075652/78ee7515-b33d-4e2c-886c-64721b2e2f31)
+
+![image](https://github.com/CrissFaDev/Nextjs-Task-/assets/80075652/c69e8813-7565-4dc7-b7fa-4c0d312e2f6c)
+
+![image](https://github.com/CrissFaDev/Nextjs-Task-/assets/80075652/9f3e52ef-d289-4d63-b56a-3fd6c8be688c)
+
+
+## Ejecución
+
+Una vez que hayas instalado las dependencias y configurado la base de datos, puedes ejecutar el proyecto localmente:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
